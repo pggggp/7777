@@ -1,0 +1,63 @@
+---
+title: "R01_3_1_plot"
+author: "吳冠霖"
+date: "2020/3/26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(datasets)
+dim(iris)
+```
+
+```{r}
+head(iris)
+```
+
+```{r}
+plot(iris$Species)
+```
+
+```{r}
+plot(iris$Petal.Length)
+```
+
+```{r}
+plot(iris$Species, iris$Petal.Width)
+```
+
+```{r}
+plot(iris$Petal.Length, iris$Petal.Width)
+```
+
+```{r}
+plot(iris)
+```
+
+```{r}
+plot(iris$Petal.Length, iris$Petal.Width,
+  col = "#cc0000",  # Hex code for datalab.cc red
+  pch = 19,         # Use solid circles for points
+  main = "Iris: Petal Length vs. Petal Width",
+  xlab = "Petal Length",
+  ylab = "Petal Width")
+```
+
+```{r}
+plot(cos, 0, 2*pi)
+plot(exp, 1, 5)
+plot(dnorm, -3, +3)
+```
+
+```{r}
+plot(dnorm, -3, +3,
+  col = "#cc0000",
+  lwd = 5,
+  main = "Standard Normal Distribution",
+  xlab = "z-scores",
+  ylab = "Density")
+```
